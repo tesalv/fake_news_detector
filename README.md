@@ -17,7 +17,7 @@ Planning: -
 
 ## Home page
 
-https://github.com/tesalv/fake_news_detector/blob/main/landing_page1.png
+![Test Image 1](https://github.com/tesalv/fake_news_detector/blob/main/landing_page1.png)
 
 https://github.com/tesalv/fake_news_detector/blob/main/landing_page2.png
 
@@ -30,3 +30,4 @@ https://github.com/tesalv/fake_news_detector/blob/main/landing_page2.png
 ## Prediction page
 
 ![Test Image 1](https://github.com/codejay411/Fake_News_detection/blob/main/Screenshot%20(59).png)
+0
