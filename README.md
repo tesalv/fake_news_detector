@@ -19,15 +19,17 @@ Planning: -
 
 ![Test Image 1](https://github.com/tesalv/fake_news_detector/blob/main/landing_page1.png)
 
-https://github.com/tesalv/fake_news_detector/blob/main/landing_page2.png
+![Test Image 2](https://github.com/tesalv/fake_news_detector/blob/main/landing_page2.png)
 
 
 ## About Page
 
-
-(https://github.com/tesalv/fake_news_detector/blob/main/about.png)
+![Test_image_3] (https://github.com/tesalv/fake_news_detector/blob/main/about.png)
 
 ## Prediction page
 
-![Test Image 1](https://github.com/codejay411/Fake_News_detection/blob/main/Screenshot%20(59).png)
-0
+![Test_Image_4] (https://github.com/tesalv/fake_news_detector/blob/main/prediction1.png)
+![Test_Image_5] (https://github.com/tesalv/fake_news_detector/blob/main/prediction2.png)
+![Test_Image_6] (https://github.com/tesalv/fake_news_detector/blob/main/prediction 3.png)
+
+
