@@ -28,8 +28,10 @@ Planning: -
 
 ## Prediction page
 
-![Test Image 4] (https://github.com/tesalv/fake_news_detector/blob/main/prediction1.png)
-![Test Image 5] (https://github.com/tesalv/fake_news_detector/blob/main/prediction2.png)
-![Test Image 6] (https://github.com/tesalv/fake_news_detector/blob/main/prediction 3.png)
+![Test Image 4](https://github.com/tesalv/fake_news_detector/blob/main/prediction1.png)
+
+![Test Image 5](https://github.com/tesalv/fake_news_detector/blob/main/prediction2.png)
+
+![Test Image 6](https://github.com/tesalv/fake_news_detector/blob/main/prediction 3.png)
 
 
