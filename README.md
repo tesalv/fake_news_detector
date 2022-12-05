@@ -24,12 +24,12 @@ Planning: -
 
 ## About Page
 
-![Test_image_3] (https://github.com/tesalv/fake_news_detector/blob/main/about.png)
+![Test Image 3](https://github.com/tesalv/fake_news_detector/blob/main/about.png)
 
 ## Prediction page
 
-![Test_Image_4] (https://github.com/tesalv/fake_news_detector/blob/main/prediction1.png)
-![Test_Image_5] (https://github.com/tesalv/fake_news_detector/blob/main/prediction2.png)
-![Test_Image_6] (https://github.com/tesalv/fake_news_detector/blob/main/prediction 3.png)
+![Test Image 4] (https://github.com/tesalv/fake_news_detector/blob/main/prediction1.png)
+![Test Image 5] (https://github.com/tesalv/fake_news_detector/blob/main/prediction2.png)
+![Test Image 6] (https://github.com/tesalv/fake_news_detector/blob/main/prediction 3.png)
 
 
