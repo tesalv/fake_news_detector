@@ -15,7 +15,6 @@ Planning: -
 2. Model Building - Bert model
 3. Flask - web-app
 
-```
 ## Home page
 
 https://github.com/tesalv/fake_news_detector/blob/main/landing_page1.png
