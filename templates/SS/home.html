@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Fake News Detection</title>
+</head>
+
+<body class="bg-yellow-100">
+    <header class="text-gray-600 body-font -my-8">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="../static/icons8-news.svg">
+                <span class="ml-3 text-xl">Fake News Detector</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+                <a class="mr-5 hover:text-gray-900">About</a>
+                <a href="/home" class="mr-5 hover:text-gray-900">Detector</a>
+                <a class="mr-5 hover:text-gray-900">Contact us</a>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <section class="text-gray-600 body-font -my-8">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-green-500 tracking-widest font-medium title-font mb-1">Machine learning project
+                </h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fake News Detector</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are living in a new era of misinformation. Not
+                    only found in politics, but also in areas like vaccination, stock values and nutrition and it’s
+                    influencing elections, threatening democracy and fuelling extremism all around the world. We believe
+                    tackling
+                    this problem and identifying fake news before they spread is essential.</p>
+                <br>
+            </div>
+        </div>
+        <div>
+            <a href="/text">Detect in Text</a>
+            <a href="/image">Detect in Image</a>
+        </div>
+        <div class="flex justify-center">
+            <a href="/text"><button
+                    class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Detect
+                    in text</button></a>
+
+        </div>
+        <div class="flex justify-center">
+            <a href="/image"><button
+                    class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Detect
+                    in image</button></a>
+        </div>
+
+    
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</html>

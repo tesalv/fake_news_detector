@@ -1,0 +1,245 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" charset="utf-8"></script>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: normal;
+            text-align: center;
+            min-height: 100vh;
+            background: #dde1e7;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            height: 200px;
+            position: relative;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            width: 15rem;
+            height: 100%;
+            position: relative;
+            user-select: none;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .box .by_default {
+            background: #dde1e7;
+            margin: 10px;
+            box-shadow: -3px -3px 7px #fffdfdcc,
+                3px 3px 5px rgba(94, 104, 121, 0.342);
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .box .by_default li {
+            padding: 1rem;
+        }
+
+        .box .by_default:before {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            right: 1rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border: 2.5px solid;
+            border-color: transparent transparent #333 #333;
+            transform: rotate(-45deg);
+        }
+
+        .box .options {
+            position: absolute;
+            top: 4rem;
+            left: 0;
+            width: 13.5rem;
+            border-radius: 5px;
+            transform: translateY(-100%);
+            transition: all 0.3s ease;
+            opacity: 0;
+            margin: 12px;
+            margin-top: 20px;
+            box-shadow: -3px -3px 7px #fffdfdcc,
+                3px 3px 5px rgba(94, 104, 121, 0.342);
+        }
+
+        .box .options li {
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+        .box .sharing {
+            display: flex;
+            align-items: center;
+        }
+
+        .box .sharing .share-icon {
+            margin-right: 1.1rem;
+            margin-left: 0.9rem;
+        }
+
+        .box.active .options {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
+        .box.active .by_default:before {
+            top: 28px;
+            transform: rotate(-225deg);
+        }
+
+        .fa-facebook {
+            color: #3b5998;
+        }
+
+        .fa-instagram {
+            color: #e1306c;
+        }
+
+        .fa-snapchat {
+            color: #fffc00;
+        }
+
+        .fa-twitter {
+            color: #1da1f2;
+        }
+    </style>
+
+</head>
+
+<body class="bg-yellow-100">
+    <header class="text-gray-600 body-font -my-8">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="../static/icons8-news.svg">
+                <span class="ml-3 text-xl">Fake News Detector</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+                <a class="mr-5 hover:text-gray-900">About</a>
+                <a href="/home" class="mr-5 hover:text-gray-900">Detector</a>
+                <a href="/test" class="mr-5 hover:text-gray-900">Contact us</a>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <section class="text-gray-600 body-font -my-8">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-green-500 tracking-widest font-medium title-font mb-1">Machine learning project
+                </h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fake News Detection</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We are living in a new era of misinformation. Not
+                    only
+                    found in politics, but also in areas like vaccination, stock values and nutrition and it’s
+                    influencing
+                    elections, threatening democracy and fuelling extremism all around the world. We believe tackling
+                    this problem
+                    and identifying fake news before they spread is essential.</p>
+                <br>
+                <p class="text-primary"><b>{{text}}</b></p>
+                <br>
+                <p class="text-primary"><b>{{prediction_text}}</b></p>
+                <br>
+                <p class="text-primary"><b>{{prediction_text2}}</b></p>
+                <br>
+                <p class="text-primary"><b>{{prediction_text1}}</b></p>
+
+            </div>
+
+            <div class="container">
+                <div class="box">
+                    <ul class="by_default">
+                        <li>
+                            <div class="sharing">
+                                <div class="share-icon">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                <p>Instagram</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="options">
+                        <li>
+                            <div class="sharing">
+                                <div class="share-icon">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </div>
+                                <p>Instagram</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sharing">
+                                <div class="share-icon">
+                                    <i class="fab fa-snapchat fa-2x"></i>
+                                </div>
+                                <p>Snapchat</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sharing">
+                                <div class="share-icon">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </div>
+                                <p>Facebook</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sharing">
+                                <div class="share-icon"><i class="fab fa-twitter fa-2x"></i></div>
+                                <p>Twitter</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                $(".by_default").click(function () {
+                    $(this).parent().toggleClass("active");
+                })
+
+                $(".options li").click(function () {
+                    var defaultShare = $(this).html();
+                    $(".by_default li").html(defaultShare);
+
+                    $(this).parents(".box").removeClass("active");
+                })
+            </script>
+    </section>
+</body>
+
+</html>
