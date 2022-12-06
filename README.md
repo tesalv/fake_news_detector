@@ -32,6 +32,11 @@ Planning: -
 
 ![Test Image 5](https://github.com/tesalv/fake_news_detector/blob/main/prediction2.png)
 
-![Test Image 6]("https://github.com/tesalv/fake_news_detector/blob/main/prediction 3.png")
+![Test Image 6](https://github.com/tesalv/fake_news_detector/blob/main/prediction3.png)
+
+## Opening the web-app
+
+Run the app.py file and the web-app will be displayed
+
 
 
